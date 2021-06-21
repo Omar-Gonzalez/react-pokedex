@@ -1,5 +1,5 @@
 import './App.css';
-import {Fragment, useState, useEffect, useRef} from "react";
+import {Fragment, useState, useEffect} from "react";
 
 const API_BASE_URL = "https://pokeapi.co/api/v2/";
 
