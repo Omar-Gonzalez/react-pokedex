@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+body {
+    background-color: #20232A;
+    margin: 0px;
+    padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    background-color: #282C34;
+    padding: 1em;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+    color: #61DAFB;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header p {
+    color: whitesmoke;
 }
 
-.App-link {
-  color: #61dafb;
+.pokemon-grid {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pokemon-tile {
+    background-color: whitesmoke;
+    border-radius: 3px;
+    margin: .5em;
+    padding: .5em;
+    width: calc(25% - 1em);
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pokemon-tile:hover {
+    background-color: #282C34;
+    color: #61DAFB;
+    font-weight: bold;
+}
+
+.pokemon-tile img {
+    height: 2em;
+    margin-right: .5em;
+    margin-bottom: -.5em;
+}
+
+.pokemon-tile:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #202020;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: whitesmoke;
+}
+
+button {
+    color: #282C34;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: .5em;
+    margin-right: .5em;
+    font-size: 1em;
+}
+
+button:hover {
+    color: whitesmoke;
+    background-color: #282C34;
+    border-color: transparent;
+}
+
+.pokemon-detail {
+    margin-top: .5em;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: .5em;
+    height: auto;
+    overflow: auto;
+}
+
+.artwork{
+    float: left;
+    margin: 1em;
+}
+
+.pokemon-detail h1 {
+    color: #282C34;
+    text-transform: capitalize;
+}
+
+.detail-container {
+    min-height: 350px;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail-tile {
+    width: 45%;
+}
+
+ul.long-list {
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .pokemon-tile {
+        width: calc(50% - 1em);
+    }
+}
+
+@media (max-width: 1250px) {
+    .detail-container {
+        width: 100%;
+    }
+
+    .detail-tile {
+        width: 99%;
+    }
+
+    .artwork{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
 }
