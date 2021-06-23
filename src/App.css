@@ -87,7 +87,7 @@ button:hover {
     overflow: auto;
 }
 
-.artwork{
+.artwork {
     float: left;
     margin: 1em;
 }
@@ -125,6 +125,20 @@ ul.long-list {
     .pokemon-tile {
         width: calc(50% - 1em);
     }
+
+    .artwork {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    ul.long-list {
+        -moz-column-count: 2;
+        -moz-column-gap: 10px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 10px;
+        column-count: 2;
+        column-gap: 10px;
+    }
 }
 
 @media (max-width: 1250px) {
@@ -136,7 +150,7 @@ ul.long-list {
         width: 99%;
     }
 
-    .artwork{
+    .artwork {
         float: none;
         display: block;
         margin-left: auto;
